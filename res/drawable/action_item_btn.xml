@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:dither="true">
+
+    <item 
+    	android:state_window_focused="false"
+        android:drawable="@color/topbar_create_multi_chat_background" />
+    <item 
+    	android:state_pressed="true"
+        android:drawable="@color/topbar_create_multi_chat_press_background"/>
+    <item 
+    	android:state_focused="true"
+        android:drawable="@color/topbar_create_multi_chat_press_background"/>
+    <item
+        android:drawable="@color/topbar_create_multi_chat_background"/>
+        
+</selector>

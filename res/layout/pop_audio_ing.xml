@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_record_pop"
+    android:layout_width="170.0dip"
+    android:layout_height="170.0dip"
+    android:layout_gravity="center"
+    android:layout_marginBottom="50.dip"
+    android:background="@drawable/pop_audio_background"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5.0dip"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/chat_record_pop_mike"
+            android:layout_width="65.dip"
+            android:layout_height="95.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="2.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/im_voice_mike" />
+
+        <ImageView
+            android:id="@+id/chat_record_pop_wave"
+            android:layout_width="36.dip"
+            android:layout_height="60.dip"
+            android:layout_gravity="bottom"
+            android:src="@drawable/audio_animation_ing" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10.0dip"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="6.0dip"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="手指上滑"
+            android:textColor="#898c91"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6.0dip"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="取消发送"
+            android:textColor="#898c91"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_backgroud"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_simple_topbar" />
+
+    <FrameLayout
+        android:id="@+id/local_file_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/local_file_bottom_view_padding" >
+
+        <TextView
+            android:id="@+id/local_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/local_file_bottom_view_button_height"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/local_file_bottom_view_text_margin_laft"
+            android:gravity="center"
+            android:textColor="@color/func_name"
+            android:textSize="@dimen/local_file_bottom_view_text" />
+
+        <Button
+            android:id="@+id/local_file_send"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/local_file_bottom_view_button_height"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_topbar_textbtn_bg"
+            android:text="@string/local_file_send"
+            android:textColor="@color/selector_topbar_btn_text"
+            android:textSize="@dimen/local_file_bottom_view_text" />
+    </RelativeLayout>
+
+</LinearLayout>

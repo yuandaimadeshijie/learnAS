@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants" >
+
+    <ImageView
+        android:id="@+id/album_griditem_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/album_photo_default" />
+
+    <View
+        android:id="@+id/album_griditem_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_album_image_bg"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/album_griditem_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_gravity="right|top"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp" >
+
+        <CheckBox
+            android:id="@+id/album_griditem_checkbox"
+            style="@style/checkbox_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+    </LinearLayout>
+
+</FrameLayout>

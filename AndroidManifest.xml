@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yonyou.sns.im"
+    android:versionCode="18"
+    android:versionName="0.62" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- 允许程序打开网络套接字(Allows applications to open network sockets) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许一个程序打开窗口使用 TYPE_SYSTEM_ALERT，显示在其他所有程序的顶层(Allows an application to open windows using the type TYPE_SYSTEM_ALERT, shown on top of all other applications. ) -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 允许程序访问有关GSM网络信息(Allows applications to access information about networks) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许访问振动设备(Allows access to the vibrator) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失( Allows usingPowerManager WakeLocks to keep processor from sleeping or screen from dimming) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 允许一个程序接收到 ACTION_BOOT_COMPLETED广播在系统完成启动(Allows an application to receive the ACTION_BOOT_COMPLETED that is broadcast after the system finishes booting. ) -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许一个程序获取信息有关当前或最近运行的任务，一个缩略的任务状态，是否活动等等(Allows an application to get information about the currently correctly running tasks: a thumbnail representation of the tasks, what activities are running in it, etc.) -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 允许程序写入外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序读外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许挂载和反挂载文件系统可移动存储(Allows mounting and unmounting file systems for removable storage.) -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 允许程序录制音频(Allows an application to record audio) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 请求访问使用照相设备(Required to be able to access the camera device. ) -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 允许程序调用killBackgroundProcesses(String).方法结束后台进程 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 高德权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:name="com.yonyou.sns.im.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Default.NoTitleBar" >
+
+        <!-- 高德key值 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/gaode_sdk_key" />
+
+        <activity
+            android:name="com.yonyou.sns.im.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Default.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="com.yonyou.sns.im.action.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.ShareActivity"
+            android:label="@string/share_send_yonyou"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="*/*" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.ChatActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <action android:name="com.yonyou.sns.im.action.CHAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.VCardActivity"
+            android:alwaysRetainTaskState="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.AboutActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="locale|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.SettingActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.AccountActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.ZoomImageActivity"
+            android:theme="@style/Default.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.AlbumPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Default.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.ChatRoomActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.CreateChatRoomActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.CameraEditActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.RosterActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.fragment.RoomMemberFragment"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.fragment.RosterFragment"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.RoomInfoActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.SystemInfoActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.SearchActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.OrgStructActivity"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.ImagePagerActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.AccountHeadActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.ChatSortActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Default.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.MultyLocationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.RosterSearchActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.LocalFileActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.yonyou.sns.im.activity.WorkDocActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <service android:name="com.yonyou.sns.im.base.ImBaseService" />
+        <service android:name="com.yonyou.sns.im.smack.SmackService" />
+
+        <receiver android:name="com.yonyou.sns.im.core.YYIMBroadcastReceiver" >
+            <intent-filter>
+
+                <!-- 开机广播 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 关机广播 -->
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <!-- 网络连接变化的广播 -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.yonyou.sns.im.core.YYIMService" />
+    </application>
+
+</manifest>

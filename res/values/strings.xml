@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="confirm">确认</string>
+    <string name="send">发送</string>
+    <string name="viewholder">viewholder</string>
+    <string name="inputplease">请输入</string>
+    <string name="delete">删除</string>
+    <string name="search">搜索</string>
+    <string name="searching">搜索中&#8230;</string>
+    <string name="add">添加</string>
+
+    <!-- guide -->
+    <string name="guide1">企业内部沟通利器</string>
+    <string name="guide2">不同设备实时同步</string>
+    <string name="guide3">万家公司信任之选</string>
+    <string name="guide_experience">立即体验</string>
+
+    <!-- recent chat -->
+    <string name="recent_audio">[语音]</string>
+    <string name="recent_image">[图片]</string>
+    <string name="recent_file">[文件]</string>
+    <string name="recent_location">[位置]</string>
+    <string name="deleteChatHistory_text">确定清空与%1$s的聊天消息记录?</string>
+    <!-- vcard -->
+    <string name="account_head">头像</string>
+    <string name="account_name">姓名</string>
+    <string name="account_nick">昵称</string>
+    <string name="account_dept">部门</string>
+    <string name="account_title">职位</string>
+    <string name="account_email">邮箱</string>
+    <string name="account_tel">电话</string>
+    <string name="account_jid">账号</string>
+    <string name="account_remark">备注</string>
+    <string name="account_delete">删除好友</string>
+    <!-- vcard -->
+    <string name="vcard_info">个人信息</string>
+    <string name="vcard_send_message">发送消息</string>
+    <string name="vcard_delete_title">删除</string>
+    <string name="vcard_delete_message">确认删除？</string>
+    <!-- 系统消息 -->
+    <string name="systeminfo_title">系统消息</string>
+    <string name="systeminfo_accept">同意</string>
+    <string name="systeminfo_refuse">拒绝</string>
+    <string name="systeminfo_accepted">已添加</string>
+    <string name="systeminfo_refused">已拒绝</string>
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_loading">正在刷新&#8230;</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- chat -->
+    <string name="chat_direction">chat_direction</string>
+    <string name="chat_record_button">开始录音</string>
+    <string name="chat_record_dismis_button">取消</string>
+    <string name="chat_extend_image">图片</string>
+    <string name="chat_extend_document">文档</string>
+    <string name="chat_extend_appendix">附件</string>
+    <string name="chat_extend_location">位置</string>
+    <string name="chat_record_button_working">点击发送</string>
+    <string name="chat_img_title">图片</string>
+    <string name="chat_file_tile">文件</string>
+    <string name="chat_search_title">搜索</string>
+    <string name="chat_delivered">已读</string>
+    <string name="chat_audio_too_short">录音时间太短</string>
+    <!-- localfile -->
+    <string name="local_file_title">本地文件</string>
+    <string name="local_file_doc">文档</string>
+    <string name="local_file_img">图片</string>
+    <string name="local_file_music">音乐</string>
+    <string name="local_file_media">媒体</string>
+    <string name="local_file_phone_memery">手机内存</string>
+    <string name="local_file_sd_card">SD卡内存</string>
+    <string name="local_file_send">发送</string>
+    <string name="local_file_send_hl">发送(%1$s)</string>
+    <string name="local_file_text">共  %1$s</string>
+    <string name="local_file_empty">未找到数据</string>
+    <string name="local_file_over_max_size">超过了最多文件个数</string>
+    <!-- work doc -->
+    <string name="work_doc_tab_receive">我收到的</string>
+    <string name="work_doc_tab_send">我发送的</string>
+    <string name="work_doc_send">发送</string>
+    <string name="work_doc_title">我的文档</string>
+    <string name="work_doc_dialog_title">删除</string>
+    <string name="work_doc_dialog_content">确认删除文件？</string>
+    <!-- camera -->
+    <string name="camera_original_size">原始尺寸</string>
+    <string name="camera_edit_confrim">确认</string>
+    <string name="camera_edit_cancel">取消</string>
+    <!-- common -->
+    <string name="app_name">用友IM</string>
+    <string name="copyright">Copyright © 2014 Yonyou. All Rights Reserved.</string>
+    <string name="next">下一步</string>
+
+    <!-- login -->
+    <string name="login_logo">logo</string>
+    <string name="login_account_hint">请输入用户名</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_button">登录</string>
+    <string name="login_action_lbl">登录</string>
+    <string name="login_forgot">忘记密码?</string>
+    <string name="login_register"><u>立即注册</u></string>
+
+    <!-- main -->
+    <string name="main_tab_recentchat">消息</string>
+    <string name="main_tab_recentchat_num">消息(%1$s)</string>
+    <string name="main_tab_contact">通讯录</string>
+    <string name="main_tab_me">我</string>
+    <string name="main_press_again_back">再按一次返回桌面</string>
+    <string name="main_create_chatgroup">发起群聊</string>
+
+    <!-- me -->
+    <string name="me_func_setting">设置</string>
+    <string name="me_func_protocal">我的电脑</string>
+    <!-- contact -->
+    <string name="contact_organization">组织架构</string>
+    <string name="contact_groupchat">群组聊天</string>
+    <string name="contact_friendlist">好友列表</string>
+
+    <!-- 发起群聊页面 -->
+    <string name="roster_list">好友列表</string>
+    <string name="multi_group_chat">群组聊天</string>
+    <string name="structure_of_organization">组织结构</string>
+    <string name="select_group">从以下分组选择</string>
+    <string name="create_chat_room_confirm_btn">确认(%1$s)</string>
+    <string name="create_chat_room_title">发起群聊</string>
+    <string name="create_chat_room_progress_bar">邀请中&#8230;</string>
+
+    <!-- 群房间列表页 -->
+    <string name="room_list_enter_title">群聊</string>
+
+    <!-- 房间成员列表勾选页面 -->
+
+
+    <!-- 好友勾选页面 -->
+
+
+    <!-- 房间信息页面 -->
+    <string name="room_info_title">聊天信息(%1$s人)</string>
+    <string name="room_info_grid_add_member">增加成员</string>
+    <string name="room_info_list_room_name">群聊名称</string>
+    <string name="room_info_list_push_room">置顶聊天</string>
+    <string name="room_info_list_no_message">消息免打搅</string>
+    <string name="room_info_list_save_to_roster">保存到通讯录</string>
+    <string name="room_info_list_show_member_name">显示成员名称</string>
+    <string name="room_info_list_clear_chat_message">清空聊天记录</string>
+    <string name="room_info_exit_button_text">删除并退出</string>
+    <string name="room_info_delete_room_dialog_title">删除房间</string>
+    <string name="room_info_delete_room_dialog_message">确认删除房间？</string>
+    <!-- 组织架构页面 -->
+    <string name="org_struct_empty">您还没有加入任何组织结构</string>
+
+    <!-- setting -->
+    <string name="setting_mutemode">静音模式</string>
+    <string name="setting_vibration">振动</string>
+    <string name="setting_led">新消息提示</string>
+    <string name="setting_preview">新消息预览</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_exit">退出当前账号</string>
+    <string name="setting_exit_close">关闭用友IM</string>
+    <string name="setting_exit_close_note">关闭后你将不会收到新的IM消息</string>
+    <string name="setting_exit_signout">退出当前账号</string>
+    <string name="setting_exit_signout_note">注销或切换至其他账号登录</string>
+
+    <!-- about -->
+    <string name="about_func_version">检查新版本</string>
+
+    <!-- account info -->
+    <string name="account_info">个人信息</string>
+    <string name="account_add">添加好友</string>
+    <string name="account_head_choice_album">从相册选择</string>
+    <string name="account_head_choice_camera">拍照</string>
+    <string name="account_modify_password">修改密码</string>
+    <string name="account_modify_password_old_password">请输入旧密码</string>
+    <string name="account_modify_password_new_password">请输入新密码</string>
+    <string name="account_modify_password_re_password">确认新密码</string>
+    <string name="account_modify_password_error">密码错误</string>
+    <string name="account_modify_password_confirm_error">密码输入不一致</string>
+    <string name="account_modify_password_success">密码修改成功</string>
+
+    <!-- 本地搜索 -->
+    <string name="search_hint">请输入关键字</string>
+    <string name="search_empty_text">您可以搜索到相关联系人、群组、聊天记录</string>
+    <string name="search_roster_text">相关联系人</string>
+    <string name="search_group_text">相关群组</string>
+    <string name="search_chat_text">相关聊天记录</string>
+    <string name="search_content_empty">请输入关键字</string>
+    <string name="search_confirm_button">添加</string>
+    <string name="roster_search_empty_text">搜索联系人</string>
+    <string name="roster_invite_sended">好友请求已发送</string>
+
+    <!-- StatusPopUp -->
+    <string name="RenameEntry_title">重命名好友</string>
+    <string name="deleteRosterItem_text">确定删除%1$s?</string>
+    <string name="deleteRosterItem_title">删除好友</string>
+
+    <!-- AddFriend -->
+    <string name="addFriend_Title">添加好友</string>
+
+    <!-- Roster CONTEXTMENU -->
+
+
+    <!-- 上拉下拉 -->
+
+    <string name="textOn">"    "</string>
+    <string name="textOff">"    "</string>
+    <string name="textOn7">&#160;&#160;</string>
+    <string name="textOff7">&#160;&#160;</string>
+    <string name="rename">备注名</string>
+    <string name="login_prompt">登录中</string>
+    <string name="aio_ime_action_label">完成</string>
+    <string name="aio_press_speak_label">按住  说话</string>
+    <string name="timeout_try_again">网络连接超时，请重试</string>
+    <string name="failed_try_again">登录失败，请重试</string>
+
+    <!-- 联系人 -->
+    <string name="recent_contact_friend">最近联系人</string>
+
+    <!-- album photo -->
+    <string name="album_all_photo">全部图片</string>
+    <string name="album_max_toast">最多只能选择%s张图片</string>
+    <string name="album_view_photo">图片查看</string>
+    <!-- camera photo -->
+    <string name="camera_edit_title">确认图片</string>
+
+    <!-- alert dialog -->
+    <string name="alert_dialog_title">修改群名称</string>
+    <string name="alert_dialog_me_title">修改个人信息</string>
+    <string name="dialog_guide_content_txt">你还没有任何聊天记录</string>
+    <string name="dialog_guide_content_empty_roster">你还没有任何好友</string>
+    <string name="dialog_guide_content_empty_roomlist">你还没有任何聊天群</string>
+    <string name="dialog_guide_button">开始聊天</string>
+    <!-- 高德地图 -->
+    <string name="gps_title">位置</string>
+    <string name="gps_send">发送</string>
+    <string name="gps_my_location">我的位置</string>
+    <string name="gps_no_result">未查到周边结果</string>
+    <string name="gps_service_busizy">服务繁忙，请稍后再试</string>
+    <!-- emoji -->
+    <string name="emoji_recent_empty">暂无</string>
+
+    <!-- common -->
+    <string name="web_jid_resouse">webim</string>
+    <string name="gaode_sdk_key">7eaa5fef392d3a05b51671a195719d4a</string>
+
+    <!-- 发起群聊页面 -->
+    <string name="create_chatroom_invite">发起邀请</string>
+
+    <!-- about -->
+    <string name="about_dialog_title">更新</string>
+    <string name="about_dialog_must_update_message">检查到新的更新，建议您及时更新。</string>
+    <string name="about_download_dialog_text">下载中。。。</string>
+    <!-- account info -->
+    <string name="account_modify_password_faild">密码修改失败</string>
+
+    <!-- Tag 专用，跟界面上的文字没有关系 -->
+    <string name="HOLDER_TAG_VIEW_HOLDER">VIEWHOLDER</string>
+
+    <!-- share -->
+    <string name="share_send_yonyou">发送到用友IM</string>
+    <string name="share_send">发送到</string>
+
+</resources>

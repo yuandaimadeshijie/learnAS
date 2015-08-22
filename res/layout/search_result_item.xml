@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64.0dip"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:duplicateParentState="true"
+        android:paddingBottom="7dip"
+        android:paddingTop="7dip">
+
+        <FrameLayout
+            android:id="@+id/icon_area"
+            android:layout_width="60.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/search_result_icon"
+                android:layout_width="42.0dip"
+                android:layout_height="42.0dip"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_default_user" />
+        </FrameLayout>
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:layout_toRightOf="@id/icon_area"
+		    android:orientation="vertical"
+		    android:layout_marginRight="11dp">
+		    <TextView
+            android:id="@+id/search_result_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="58.0dip"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:includeFontPadding="false"
+            android:padding="0.0dip"
+            android:singleLine="true"
+            android:text="User"
+            android:textColor="@color/list_name"
+            android:textSize="@dimen/list_name" />
+
+        <TextView
+            android:id="@+id/search_result_msg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30.0dip"
+            android:duplicateParentState="true"
+            android:ellipsize="start"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="6.0dip"
+            android:singleLine="true"
+            android:text="new message"
+            android:textColor="@color/list_content"
+            android:textSize="@dimen/list_content" />
+		</LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

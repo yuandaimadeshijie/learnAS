@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/local_file_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:duplicateParentState="true"
+    android:orientation="horizontal"
+    android:paddingBottom="7dip"
+    android:paddingTop="7dip"
+    android:tag="front" >
+
+    <ImageView
+        android:id="@+id/local_file_item_icon"
+        android:layout_width="@dimen/list_height"
+        android:layout_height="@dimen/list_height"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:padding="@dimen/list_avatar_padding"
+        android:scaleType="centerInside"
+        android:src="@drawable/local_file_word_icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/list_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" >
+
+        <TextView
+            android:id="@+id/local_file_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:textColor="@color/list_name"
+            android:textSize="@dimen/list_name" />
+
+        <TextView
+            android:id="@+id/local_file_item_size"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2.0dip"
+            android:layout_weight="1"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:paddingRight="6.0dip"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/list_content"
+            android:textSize="@dimen/list_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/local_file_click"
+        android:layout_width="@dimen/local_file_list_item_width"
+        android:layout_height="@dimen/list_height"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/list_checkbox_margin_right"
+        android:paddingRight="@dimen/list_checkbox_margin_right" >
+
+        <CheckBox
+            android:id="@+id/local_file_item_checkbox"
+            style="@style/checkbox_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/local_file_item_arrow"
+            android:layout_width="@dimen/func_right_arrow_size"
+            android:layout_height="@dimen/func_right_arrow_size"
+            android:background="@null"
+            android:contentDescription="@null"
+           	android:duplicateParentState="true"
+            android:src="@drawable/selector_arrow_right" 
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/work_doc_item_send"
+            android:layout_width="@dimen/work_doc_send_width"
+            android:layout_height="@dimen/work_doc_send_height"
+            android:background="@drawable/shape_system_accept_button"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:text="@string/work_doc_send"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

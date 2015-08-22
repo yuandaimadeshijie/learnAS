@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_record_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/record_contaner_bg"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/chat_record_frame_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/chat_record_time" />
+
+    <com.yonyou.sns.im.ui.widget.recoredview.WaveLine
+        android:id="@+id/chat_record_frame_anim"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp" />
+
+    <ImageButton
+        android:id="@+id/chat_record_frame_btn"
+        android:layout_width="@dimen/chat_record_button_size"
+        android:layout_height="@dimen/chat_record_button_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/chat_record_button_margin_top"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/record_button_bg" />
+
+    <ImageView
+        android:id="@+id/chat_record_frame_btnborder"
+        android:layout_width="@dimen/chat_record_button_size"
+        android:layout_height="@dimen/chat_record_button_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/chat_record_button_margin_top"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/record_round"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/chat_record_frame_btntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/chat_record_text_margin_top"
+        android:text="@string/chat_record_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/chat_record_button_text" />
+
+    <ImageButton
+        android:id="@+id/chat_record_frame_dismiss_btn"
+        android:layout_width="@dimen/chat_record_dismis_button_size"
+        android:layout_height="@dimen/chat_record_dismis_button_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/chat_record_dismis_button_margin_top"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/record_dismis_button_bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/chat_record_dismis_text_margin_top"
+        android:text="@string/chat_record_dismis_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/chat_record_button_text" />
+
+</FrameLayout>

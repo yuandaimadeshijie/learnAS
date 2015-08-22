@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_edit_height"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dialog_btn_magrin_top"
+        android:layout_marginLeft="@dimen/dialog_btn_magrin_left"
+        android:layout_marginRight="@dimen/dialog_btn_magrin_right"
+        android:layout_marginTop="@dimen/dialog_btn_magrin_top"
+        android:background="@drawable/shape_dialog_edit_bg"
+        android:hint="@string/inputplease"
+        android:paddingLeft="@dimen/dialog_edit_padding_left"
+        android:paddingRight="@dimen/dialog_edit_padding_right"
+        android:singleLine="true"
+        android:textColor="@color/dialog_text"
+        android:textSize="@dimen/dialog_edit_text" />
+
+    <ImageView
+        android:id="@+id/edit_delete_btn"
+        android:layout_width="@dimen/dialog_edit_delete_leght"
+        android:layout_height="@dimen/dialog_edit_delete_leght"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/dialog_edit_delete_margin_right"
+        android:contentDescription="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search_deleted" />
+
+</FrameLayout>

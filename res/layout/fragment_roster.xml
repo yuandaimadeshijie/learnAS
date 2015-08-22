@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   	android:background="@color/gray_f" 
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/friend_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/search_inernal_normal_parent_padding">
+
+        <EditText
+            android:id="@+id/friend_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_inernal_normal_height"
+            android:background="@drawable/create_multi_chat_search_shape"
+            android:gravity="center|left"
+            android:imeActionLabel="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingBottom="@dimen/search_inernal_normal_padding"
+            android:paddingLeft="@dimen/search_inernal_normal_padding"
+            android:paddingRight="@dimen/search_topbar_edit_delete_margin_right"
+            android:paddingTop="@dimen/search_inernal_normal_padding"
+            android:singleLine="true"
+            android:textSize="@dimen/search_inernal_normal_text" />
+
+        <TextView
+            android:id="@+id/friend_search_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/create_multi_chat_search"
+            android:drawablePadding="3dp"
+            android:text="@string/search"
+            android:textColor="@color/create_multi_chat_module_text" />
+
+        <LinearLayout
+            android:id="@+id/friend_search_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/search_inernal_normal_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/search_topbar_edit_delete_margin_right"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:src="@drawable/search_deleted" />
+        </LinearLayout>
+    </RelativeLayout>
+	<View android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/white"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1" >
+
+        <include layout="@layout/friend_group_list" />
+
+        <include layout="@layout/custom_guide_view"/>
+
+        <com.yonyou.sns.im.ui.widget.LetterLocationBar
+            android:id="@+id/friend_sidebar"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical" />
+
+        <TextView
+            android:id="@+id/friend_sidebar_text"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent_dark_66"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

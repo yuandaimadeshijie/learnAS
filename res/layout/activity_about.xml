@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_simple_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/about_background" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/about_padding_top" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@null"
+                        android:src="@drawable/icon_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/about_appname_margin_top"
+                        android:padding="@dimen/about_appname_padding"
+                        android:text="@string/app_name"
+                        android:textColor="@color/about_appname"
+                        android:textSize="@dimen/about_appname" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/about_separator_height"
+                        android:layout_marginLeft="@dimen/about_separator_margin"
+                        android:layout_marginRight="@dimen/about_separator_margin"
+                        android:background="@color/about_separator" />
+
+                    <TextView
+                        android:id="@+id/about_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/about_version_padding"
+                        android:textColor="@color/about_version"
+                        android:textSize="@dimen/about_version" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about_func_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/about_func_margin_top"
+                    android:background="@color/me_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="1px"
+                    android:paddingTop="1px" >
+
+                    <LinearLayout
+                        android:id="@+id/about_func_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/about_copyright_padding"
+                android:text="@string/copyright"
+                android:textColor="@color/about_copyright"
+                android:textSize="@dimen/about_copyright" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ListView -->
+    <dimen name="list_height">64dp</dimen>
+    <dimen name="list_avatar_padding">8dp</dimen>
+    <dimen name="list_unread_size">16dp</dimen>
+    <dimen name="list_unread_margin_left">44dp</dimen>
+    <dimen name="list_unread_margin_top">4dp</dimen>
+    <dimen name="list_padding">8dp</dimen>
+    <dimen name="list_group_height">24dp</dimen>
+    <dimen name="list_group">14sp</dimen>
+    <dimen name="list_name">18sp</dimen>
+    <dimen name="list_name_height">26dp</dimen>
+    <dimen name="list_msg_height">22dp</dimen>
+    <dimen name="list_msg_margin_top">4dp</dimen>
+    <dimen name="list_content">15sp</dimen>
+    <dimen name="list_time">12sp</dimen>
+    <dimen name="list_unread_count">10sp</dimen>
+    <dimen name="list_divider">1px</dimen>
+    <dimen name="list_horizontal_margin">8dp</dimen>
+    <dimen name="list_checkbox_margin_right">11dp</dimen>
+    <!-- emoji -->
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <!-- common dialog -->
+    <dimen name="dialog_width">200dp</dimen>
+    <dimen name="dialog_title_height">48dp</dimen>
+    <dimen name="dialog_title_icon_margin">18dp</dimen>
+    <dimen name="dialog_btn_height">52dp</dimen>
+    <dimen name="dialog_btn_magrin_left">15dp</dimen>
+    <dimen name="dialog_btn_magrin_right">15dp</dimen>
+    <dimen name="dialog_btn_magrin_top">24dp</dimen>
+    <dimen name="dialog_edit_padding_left">15dp</dimen>
+    <dimen name="dialog_edit_padding_right">37dp</dimen>
+    <dimen name="dialog_edit_height">45dp</dimen>
+    <dimen name="dialog_edit_delete_margin_right">22.5dp</dimen>
+    <dimen name="dialog_title_text">15sp</dimen>
+    <dimen name="dialog_edit_text">18sp</dimen>
+    <dimen name="dialog_edit_delete_leght">27dp</dimen>
+    <!-- dialog menu -->
+    <dimen name="dialog_menu_horizontal_margin">100dp</dimen>
+    <dimen name="dialog_menu_vertical_padding">10dp</dimen>
+    <dimen name="dialog_menu_text">15sp</dimen>
+    <dimen name="dialog_menu_separator_padding">8dp</dimen>
+
+    <!-- top bar -->
+    <dimen name="top_bar_height">46dp</dimen>
+    <dimen name="top_bar_title">18sp</dimen>
+    <dimen name="top_bar_title_margin">44dp</dimen>
+    <dimen name="top_bar_icon_padding">13dp</dimen>
+    <dimen name="top_bar_height_double">84dp</dimen>
+    <dimen name="top_bar_textbtn_height">29dp</dimen>
+    <dimen name="top_bar_textbtn_corner">3dp</dimen>
+    <dimen name="top_bar_textbtn">16sp</dimen>
+    <!-- func -->
+    <dimen name="func_height">48dp</dimen>
+    <dimen name="func_icon_size">20dp</dimen>
+    <dimen name="func_name">18sp</dimen>
+    <dimen name="func_name_width">100dp</dimen>
+    <dimen name="func_right_padding">12dp</dimen>
+    <dimen name="func_horizontal_margin">22dp</dimen>
+    <dimen name="func_right_arrow_size">18dp</dimen>
+    <!-- vcard -->
+    <dimen name="vcard_bg_height">87dp</dimen>
+    <dimen name="vcard_top_height">188dp</dimen>
+    <dimen name="vcard_head_size">100dp</dimen>
+    <dimen name="vcard_head_margin_top">33dp</dimen>
+    <dimen name="vcard_head_margin_bottom">17dp</dimen>
+    <dimen name="vcard_name">22sp</dimen>
+    <dimen name="vcard_func_text">16sp</dimen>
+    <dimen name="vcard_send_text">18sp</dimen>
+    <dimen name="vcard_send_horizontal_margin">11dp</dimen>
+    <dimen name="vcard_send_vertical_margin">11dp</dimen>
+    <dimen name="vcard_send_height">52dp</dimen>
+    <!-- 系统消息 -->
+    <dimen name="systeminfo_item_confirm_width">48dp</dimen>
+    <dimen name="systeminfo_item_confirm_height">26dp</dimen>
+    <dimen name="systeminfo_item_confirm_text">14sp</dimen>
+
+    <!-- common -->
+    <dimen name="checkbox_size">27dp</dimen>
+    <!-- switch -->
+    <dimen name="switch_inner_border">2dp</dimen>
+    <dimen name="switch_height">30dp</dimen>
+    <dimen name="switch_radius">15dp</dimen>
+    <dimen name="switch_mini_width">1dp</dimen>
+    <dimen name="switch_text_padding">15dp</dimen>
+
+    <!-- splash -->
+    <dimen name="splash_slogan_height">26dp</dimen>
+    <dimen name="guide_dot_margin">6dp</dimen>
+
+    <!-- login -->
+    <dimen name="login_logo_width">137dp</dimen>
+    <dimen name="login_logo_height">132dp</dimen>
+    <dimen name="login_logo_margin">8dp</dimen>
+    <dimen name="login_input">18sp</dimen>
+    <dimen name="login_input_height">175dp</dimen>
+    <dimen name="login_input_margin">44dp</dimen>
+    <dimen name="login_input_margin_top">15dp</dimen>
+    <dimen name="login_input_padding">12dp</dimen>
+    <dimen name="login_input_padding_left">12dp</dimen>
+    <dimen name="login_input_bg_corner">3dp</dimen>
+    <dimen name="login_button">18sp</dimen>
+    <dimen name="login_button_margin_top">20dp</dimen>
+    <dimen name="login_bottom">14sp</dimen>
+    <dimen name="login_bottom_padding">30dp</dimen>
+
+    <!-- main -->
+    <dimen name="main_bottom">54dp</dimen>
+    <dimen name="main_tabitem">12sp</dimen>
+    <dimen name="main_tabwidget_separator_height">1px</dimen>
+    <dimen name="main_tabwidget_image_size">32dp</dimen>
+    <dimen name="main_tabwidget_image_padding">4dp</dimen>
+    <dimen name="main_tabwidget_image_margin">6dp</dimen>
+    <dimen name="main_tabwidget_redpoint_size">16dp</dimen>
+    <dimen name="main_tabwidget_redpoint_margin_top">2dp</dimen>
+
+    <!-- topbar create multi chat -->
+    <dimen name="topbar_create_multi_chat_length">17dp</dimen>
+    <dimen name="topbar_create_multi_chat_icon_padding_top">15dp</dimen>
+    <dimen name="topbar_create_multi_chat_icon_padding_left">20dp</dimen>
+    <dimen name="topbar_create_multi_chat_text_margin_right">20dp</dimen>
+    <dimen name="topbar_create_multi_chat_text_size">15sp</dimen>
+    <dimen name="topbar_create_multi_chat_divide_margin_left">14dp</dimen>
+
+    <!-- createMultiChat -->
+    <dimen name="create_multi_chat_user_image_size">45dp</dimen>
+    <dimen name="create_multi_chat_left">11dp</dimen>
+    <dimen name="create_multi_chat_module_height">34dp</dimen>
+    <dimen name="create_multi_chat_module_text">15sp</dimen>
+    <dimen name="create_multi_chat_select_group_space">2dp</dimen>
+    <dimen name="create_multi_chat_select_group_item_text">12sp</dimen>
+
+    <!-- roomList -->
+    <dimen name="room_list_text_padding_left">7dp</dimen>
+
+    <!-- roomInfo -->
+    <dimen name="room_info_addbtn_padding">11dp</dimen>
+    <dimen name="room_info_grid_vertical_spacing">10dp</dimen>
+    <dimen name="room_info_grid_item_text_margin_top">2dp</dimen>
+    <dimen name="room_info_grid_item_text_size">11sp</dimen>
+    <dimen name="room_info_grid_item_height">62dp</dimen>
+    <dimen name="room_info_list_item_height">49dp</dimen>
+    <dimen name="room_info_list_item_padding_left">34dp</dimen>
+    <dimen name="room_info_list_item_padding_right">19dp</dimen>
+    <dimen name="room_info_list_item_text_size">15sp</dimen>
+    <dimen name="room_info_exit_button_text_size">18sp</dimen>
+    <dimen name="room_info_exit_button_margin_left">11dp</dimen>
+    <dimen name="room_info_exit_button_margin_bottom">11dp</dimen>
+    <dimen name="room_info_exit_button_height">52dp</dimen>
+
+    <!-- search -->
+    <dimen name="search_module_text">15sp</dimen>
+    <dimen name="search_module_text_padding_left">11dp</dimen>
+    <dimen name="search_module_text_margin_top">10dp</dimen>
+    <dimen name="search_module_text_margin_bottom">5dp</dimen>
+    <dimen name="search_topbar_edit_padding_left">16dp</dimen>
+    <dimen name="search_topbar_edit_padding_right">35dp</dimen>
+    <dimen name="search_topbar_edit_margin">7dp</dimen>
+    <dimen name="search_topbar_edit_hint_size">15sp</dimen>
+    <dimen name="search_topbar_edit_delete_margin_right">11dp</dimen>
+    <dimen name="search_empty_image_width">90dp</dimen>
+    <dimen name="search_empty_image_height">80dp</dimen>
+    <dimen name="search_empty_image_margin_top">60dp</dimen>
+    <dimen name="search_empty_image_margin_bottom">41dp</dimen>
+    <dimen name="search_empty_text">18sp</dimen>
+    <dimen name="search_inernal_normal_padding">4dp</dimen>
+    <dimen name="search_inernal_normal_text">12sp</dimen>
+    <dimen name="search_inernal_normal_height">28dp</dimen>
+    <dimen name="search_inernal_normal_parent_padding">6dp</dimen>
+    <!-- me -->
+    <dimen name="me_account_height">96dp</dimen>
+    <dimen name="me_account_head_size">71dp</dimen>
+    <dimen name="me_account_name">20sp</dimen>
+    <dimen name="me_account_right_size">18dp</dimen>
+    <dimen name="me_horizontal_margin">22dp</dimen>
+    <dimen name="me_vertical_margin">17dp</dimen>
+
+    <!-- contact -->
+    <dimen name="contaxt_item_text">18sp</dimen>
+    <dimen name="contaxt_item_text_margin">7dp</dimen>
+
+    <!-- setting -->
+    <dimen name="setting_item">18sp</dimen>
+    <dimen name="setting_item_height">48dp</dimen>
+    <dimen name="setting_horizontal_margin">22dp</dimen>
+    <dimen name="setting_switch_height">22dp</dimen>
+    <dimen name="setting_exit_horizontal_padding">12dp</dimen>
+    <dimen name="setting_exit_text_padding_right">15dp</dimen>
+    <dimen name="setting_exit_note_vertical_padding">15dp</dimen>
+    <dimen name="setting_exit_note_vertical_margin">5dp</dimen>
+    <dimen name="setting_exit_text">15sp</dimen>
+    <dimen name="setting_exit_note_text">12sp</dimen>
+    <dimen name="setting_exit_icon_size">32dp</dimen>
+    <dimen name="setting_exit_icon_margin">12dp</dimen>
+
+    <!-- about -->
+    <dimen name="about_padding_top">50dp</dimen>
+    <dimen name="about_copyright">12sp</dimen>
+    <dimen name="about_copyright_padding">12dp</dimen>
+    <dimen name="about_appname">24sp</dimen>
+    <dimen name="about_appname_margin_top">10dp</dimen>
+    <dimen name="about_appname_padding">10dp</dimen>
+    <dimen name="about_separator_margin">20dp</dimen>
+    <dimen name="about_separator_height">1px</dimen>
+    <dimen name="about_version">14sp</dimen>
+    <dimen name="about_version_padding">8dp</dimen>
+    <dimen name="about_func_margin_top">30dp</dimen>
+
+    <!-- account info -->
+    <dimen name="account_info_head_height">60dp</dimen>
+    <dimen name="account_info_head_size">44dp</dimen>
+    <dimen name="account_info_func_text">15sp</dimen>
+
+    <!-- popup menu HORIZONTAL -->
+    <dimen name="popup_horzontal_item_height">56dp</dimen>
+    <dimen name="popup_horzontal_item_icon_margin_top">13dp</dimen>
+    <dimen name="popup_horzontal_item_icon_height">16dp</dimen>
+    <dimen name="popup_horzontal_item_padding_left">27dp</dimen>
+    <dimen name="popup_horzontal_item_text">12sp</dimen>
+    <dimen name="popup_horzontal_item_text_margin_bottom">8dp</dimen>
+
+    <!-- album photo -->
+    <dimen name="album_photo_spacing">3dp</dimen>
+    <dimen name="album_photo_bottom_height">54dp</dimen>
+    <dimen name="album_photo_thumb_padding">8dp</dimen>
+    <dimen name="album_listitem_horizontal_margin">10dp</dimen>
+    <dimen name="album_listitem_vertical_padding">10dp</dimen>
+    <dimen name="album_listitem_image_size">50dp</dimen>
+    <dimen name="album_listitem_icon_size">32dp</dimen>
+    <dimen name="album_listitem_text">14sp</dimen>
+    <dimen name="album_listview_margin_bottom">72dp</dimen>
+    <dimen name="album_thumbview_image_size">42dp</dimen>
+    <!-- local file -->
+    <dimen name="local_file_module_margin_top">22dp</dimen>
+    <dimen name="local_file_item_height">47dp</dimen>
+    <dimen name="local_file_item_padding_left">24dp</dimen>
+    <dimen name="local_file_item_padding_right">29dp</dimen>
+    <dimen name="local_file_icon_margin_right">20dp</dimen>
+    <dimen name="local_file_num_text">11sp</dimen>
+    <dimen name="local_file_bottom_view_padding">10dp</dimen>
+    <dimen name="local_file_bottom_view_text">16sp</dimen>
+    <dimen name="local_file_bottom_view_text_margin_laft">12dp</dimen>
+    <dimen name="local_file_bottom_view_button_height">30dp</dimen>
+    <dimen name="local_file_list_item_width">82dp</dimen>
+    <!-- work doc -->
+    <dimen name="work_doc_text">18sp</dimen>
+    <dimen name="work_doc_send_width">60dp</dimen>
+    <dimen name="work_doc_send_height">30dp</dimen>
+    <!-- chat -->
+    <dimen name="chat_item_vertical_padding">6dp</dimen>
+    <dimen name="chat_item_horizontal_padding">10dp</dimen>
+    <dimen name="chat_item_date_margin">6dp</dimen>
+    <dimen name="chat_item_date_vertical_padding">4dp</dimen>
+    <dimen name="chat_item_date_horizontal_padding">10dp</dimen>
+    <dimen name="chat_item_date">12sp</dimen>
+    <dimen name="chat_item_content_margin">6dp</dimen>
+    <dimen name="chat_item_photo_size">40dp</dimen>
+    <dimen name="chat_item_username">12sp</dimen>
+    <dimen name="chat_item_message">16sp</dimen>
+    <dimen name="chat_item_message_linespace">3dp</dimen>
+    <dimen name="chat_item_message_vertical_padding">3dp</dimen>
+    <dimen name="chat_item_message_horizontal_padding">10dp</dimen>
+    <dimen name="chat_item_message_max_width">200dp</dimen>
+    <dimen name="chat_item_audio_width">40dp</dimen>
+    <dimen name="chat_item_audio_height">32dp</dimen>
+    <dimen name="chat_item_autio_play_size">18dp</dimen>
+    <dimen name="chat_item_image_maxsize">200px</dimen>
+    <dimen name="chat_item_extrainfo">12sp</dimen>
+    <dimen name="chat_item_unread_size">8dp</dimen>
+    <dimen name="chat_item_resend_size">20dp</dimen>
+    <dimen name="chat_item_loading_size">20dp</dimen>
+    <dimen name="chat_item_file_name">16sp</dimen>
+    <dimen name="chat_item_file_size">14sp</dimen>
+    <dimen name="chat_item_file_width">200dp</dimen>
+    <dimen name="chat_item_file_height">80dp</dimen>
+    <dimen name="chat_item_file_icon">60dp</dimen>
+    <dimen name="chat_item_file_text_height">30dp</dimen>
+    <dimen name="chat_item_file_padding">4dp</dimen>
+    <dimen name="chat_record_button_size">106dp</dimen>
+    <dimen name="chat_record_button_margin_top">266dp</dimen>
+    <dimen name="chat_record_dismis_button_size">64dp</dimen>
+    <dimen name="chat_record_dismis_button_margin_top">413dp</dimen>
+    <dimen name="chat_record_button_text">10sp</dimen>
+    <dimen name="chat_record_text_margin_top">338dp</dimen>
+    <dimen name="chat_record_dismis_text_margin_top">453dp</dimen>
+    <dimen name="chat_record_time">30sp</dimen>
+
+    <!-- multy location -->
+    <dimen name="chat_item_location_width">200dp</dimen>
+    <dimen name="chat_item_location_height">170dp</dimen>
+    <dimen name="chat_item_location_text_size">12sp</dimen>
+
+    <!-- createMultiChat -->
+    <dimen name="create_chatroom_selected_list_height">56dp</dimen>
+    <dimen name="create_chatroom_selected_icon_size">40dp</dimen>
+    <dimen name="create_chatroom_group_vertical_padding">9dp</dimen>
+
+    <!-- account info -->
+    <dimen name="common_menu_dialog_tile_marginTop">15.0dip</dimen>
+    <dimen name="common_menu_dialog_tile_marginBottom">7.5dip</dimen>
+    <dimen name="common_menu_dialog_layout_paddingLR">19dip</dimen>
+    <dimen name="common_menu_dialog_tilte_paddingLR">37.0dip</dimen>
+    <dimen name="common_menu_dialog_layout_cancel_marginTop">30.0dip</dimen>
+    <dimen name="common_menu_dialog_layout_cancel_marginBottom">27.0dip</dimen>
+    <dimen name="common_menu_dialog_layout_btn_marginTop">3.0dip</dimen>
+    <dimen name="common_menu_dialog_layout_btn_marginBottom">3.0dip</dimen>
+
+</resources>

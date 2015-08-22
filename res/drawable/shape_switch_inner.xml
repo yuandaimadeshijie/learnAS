@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/switch_inner" />
+
+    <corners android:radius="@dimen/switch_radius" />
+
+    <size android:height="@dimen/switch_height" />
+
+    <stroke
+        android:width="@dimen/switch_inner_border"
+        android:color="@color/transparent" />
+
+</shape>

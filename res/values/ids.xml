@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- topbar -->
+    <item name="topbar_back" type="id"></item>
+
+    <!-- vcard -->
+    <item name="vcard_func_name" type="id"/>
+    <item name="vcard_func_nick" type="id"/>
+    <item name="vcard_func_dept" type="id"/>
+    <item name="vcard_func_email" type="id"/>
+    <item name="vcard_func_tel" type="id"/>
+    <item name="vcard_func_jid" type="id"/>
+    <item name="vcard_func_delete" type="id"/>
+    <!-- topbar -->
+    <item name="topbar_chat_info" type="id"></item>
+    <item name="topbar_album_confirm" type="id"></item>
+    <item name="topbar_camera_edit_confirm" type="id"></item>
+    <item name="topbar_camera_edit_cancel" type="id"></item>
+    <item name="topbar_album_choice" type="id"></item>
+    <item name="multy_location_send" type="id"></item>
+    <!-- me -->
+    <item name="me_func_setting" type="id"/>
+    <item name="me_func_protocal" type="id"/>
+    <!-- about -->
+    <item name="about_func_version" type="id"/>
+	
+    <!-- account info -->
+    <item name="account_func_head" type="id"/>
+    <item name="account_func_name" type="id"/>
+    <item name="account_func_nick" type="id"/>
+    <item name="account_func_dept" type="id"/>
+    <item name="account_func_email" type="id"/>
+    <item name="account_func_remark" type="id"/>
+    <item name="account_func_tel" type="id"/>
+    <item name="account_func_jid" type="id"/>
+    <item name="account_func_title" type="id"/>
+    <item name="account_modify_password" type="id"/>
+
+    <!-- other -->
+    <item name="inputArea" type="id">false</item>
+    <item name="selected_view" type="id"/>
+    <item name="scrollview" type="id"/>
+    <item name="arrow_down" type="id"/>
+    <item name="scroller" type="id"/>
+
+    <!-- topbar -->
+    <item name="topbar_personal_info" type="id"></item>
+    <item name="topbar_message_send" type="id"></item>
+    <item name="main_topbar_menu" type="id"></item>
+    <item name="main_topbar_search" type="id"></item>
+    <item name="main_topbar_add" type="id"></item>
+    <item name="chatroom_list_topbar_add" type="id"></item>
+    <item name="chatroom_list_topbar_confirm" type="id"></item>
+    <item name="search_topbar_edit" type="id"></item>
+    <item name="search_topbar_btn" type="id"></item>
+    <item name="friend_topbar_add" type="id"></item>
+    <item name="account_headcut_confirm" type="id"></item>
+	
+    <!-- local file -->
+    <item name="local_file_document" type="id"></item>
+    <item name="local_file_image" type="id"></item>
+    <item name="local_file_music" type="id"></item>
+    <item name="local_file_media" type="id"></item>
+    <item name="local_file_phone_memery" type="id"></item>
+    <item name="local_file_SD_memery" type="id"></item>
+    
+    <!-- emoji -->
+    <item name="emoji_tab_text" type="id"></item>
+</resources>

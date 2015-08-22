@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dialog_menu_horizontal_margin"
+    android:layout_marginRight="@dimen/dialog_menu_horizontal_margin"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/account_head_choice_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_func_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dialog_menu_vertical_padding"
+        android:paddingTop="@dimen/dialog_menu_vertical_padding" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/account_head_choice_album"
+            android:textColor="@color/dialog_menu_text"
+            android:textSize="@dimen/dialog_menu_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/me_separator"
+        android:paddingLeft="@dimen/dialog_menu_separator_padding"
+        android:paddingRight="@dimen/dialog_menu_separator_padding" />
+
+    <LinearLayout
+        android:id="@+id/account_head_choice_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_func_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dialog_menu_vertical_padding"
+        android:paddingTop="@dimen/dialog_menu_vertical_padding" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/account_head_choice_camera"
+            android:textColor="@color/dialog_menu_text"
+            android:textSize="@dimen/dialog_menu_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/me_separator"
+        android:paddingLeft="@dimen/dialog_menu_separator_padding"
+        android:paddingRight="@dimen/dialog_menu_separator_padding" />
+
+    <LinearLayout
+        android:id="@+id/account_head_choice_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_func_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dialog_menu_vertical_padding"
+        android:paddingTop="@dimen/dialog_menu_vertical_padding" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/cancel"
+            android:textColor="@color/dialog_menu_text"
+            android:textSize="@dimen/dialog_menu_text" />
+    </LinearLayout>
+
+</LinearLayout>

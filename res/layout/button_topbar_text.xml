@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/func_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_textbtn_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/selector_topbar_textbtn_bg"
+        android:gravity="center"
+        android:maxWidth="@dimen/top_bar_height_double"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:layout_margin="8dp"
+        android:text="@string/ok"
+        android:textColor="@color/selector_topbar_btn_text"
+        android:textSize="@dimen/top_bar_textbtn" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_func_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/album_listitem_vertical_padding"
+    android:paddingTop="@dimen/album_listitem_vertical_padding" >
+
+    <ImageView
+        android:id="@+id/album_listitem_image"
+        android:layout_width="@dimen/album_listitem_image_size"
+        android:layout_height="@dimen/album_listitem_image_size"
+        android:layout_marginLeft="@dimen/album_listitem_horizontal_margin"
+        android:layout_marginRight="@dimen/album_listitem_horizontal_margin"
+        android:contentDescription="@null"
+        android:duplicateParentState="true"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/album_listitem_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:textColor="@color/gray_57"
+        android:textSize="@dimen/album_listitem_text" />
+
+    <ImageView
+        android:id="@+id/album_listitem_cur"
+        android:layout_width="@dimen/album_listitem_icon_size"
+        android:layout_height="@dimen/album_listitem_icon_size"
+        android:layout_marginLeft="@dimen/album_listitem_horizontal_margin"
+        android:layout_marginRight="@dimen/album_listitem_horizontal_margin"
+        android:contentDescription="@null"
+        android:src="@drawable/album_listitem_cur" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project name="">
+    
+	<property name="key.store" value="yonyouim.keystore" />
+	<property name="key.store.password" value="uapudn520" />
+	<property name="key.alias" value="yonyouim" />
+	<property name="key.alias.password" value="uapudn520" />
+
+</project>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_simple_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/vcard_bg"
+        android:fillViewport="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vcard_top_height" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/vcard_bg_height"
+                        android:background="@drawable/vcard_bg"
+                        android:contentDescription="@null" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/vcard_top_separator" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/vcard_head_margin_bottom"
+                    android:layout_marginTop="@dimen/vcard_head_margin_top"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/vcard_head"
+                        android:layout_width="@dimen/vcard_head_size"
+                        android:layout_height="@dimen/vcard_head_size"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/vcard_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:singleLine="true"
+                        android:textColor="@color/vcard_name"
+                        android:textSize="@dimen/vcard_name" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/vcard_func_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/vcard_border"
+                android:orientation="vertical"
+                android:paddingBottom="1px"
+                android:paddingTop="1px" >
+
+                <LinearLayout
+                    android:id="@+id/vcard_func_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/vcard_send_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vcard_send_height"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/vcard_send_vertical_margin"
+                android:layout_marginLeft="@dimen/vcard_send_horizontal_margin"
+                android:layout_marginRight="@dimen/vcard_send_horizontal_margin"
+                android:layout_marginTop="@dimen/vcard_send_vertical_margin"
+                android:background="@color/green_normal"
+                android:gravity="center"
+                android:text="@string/vcard_send_message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/vcard_send_text" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

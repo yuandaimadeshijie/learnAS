@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageButton
+        android:id="@+id/topbar_func_icon"
+        android:layout_width="@dimen/top_bar_height"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/selector_topbar_btn_bg"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:padding="@dimen/top_bar_icon_padding"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

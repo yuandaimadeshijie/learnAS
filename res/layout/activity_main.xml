@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_simple_topbar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_tabwidget_separator_height"
+            android:background="@color/main_tabwidget_separator" />
+
+        <com.yonyou.sns.im.ui.widget.SnsTabWidget
+            android:id="@+id/main_tabwidget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_tabwidget_background"
+            android:showDividers="none" />
+    </LinearLayout>
+
+</LinearLayout>

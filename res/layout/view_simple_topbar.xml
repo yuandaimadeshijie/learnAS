@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="@color/top_bar_background" >
+
+    <LinearLayout
+        android:id="@+id/left_func"
+        android:layout_width="@dimen/top_bar_height"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topbar_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/top_bar_title_margin"
+        android:layout_marginRight="@dimen/top_bar_title_margin"
+        android:background="@null"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/topbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/top_bar_title"
+            android:textSize="@dimen/top_bar_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_func"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/selector_topbar_btn_bg"
+    android:gravity="center"
+    android:paddingLeft="@dimen/top_bar_icon_padding"
+    android:paddingRight="@dimen/top_bar_icon_padding" >
+
+    <TextView
+        android:id="@+id/album_topbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/top_bar_height"
+        android:drawableRight="@drawable/topbar_title_more"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/top_bar_title"
+        android:textSize="@dimen/top_bar_title" />
+
+</LinearLayout>

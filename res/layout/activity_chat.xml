@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_backgroud"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_simple_topbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:descendantFocusability="beforeDescendants" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.yonyou.sns.im.ui.widget.xlistview.MsgListView
+                android:id="@+id/chat_message_list"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="bottom"
+                android:layout_weight="1.0"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/global_border" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_option_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingTop="8.0dip" >
+
+                <ImageButton
+                    android:id="@+id/chat_switch_btn"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:background="@null"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_record" />
+
+                <FrameLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/chat_input_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical" >
+
+                        <ImageButton
+                            android:id="@+id/chat_emoji_btn"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8.0dip"
+                            android:background="@null"
+                            android:contentDescription="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/icon_emoji" />
+
+                        <com.yonyou.sns.im.ui.emoji.view.EmojiEditText
+                            android:id="@+id/chat_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/chat_emoji_btn"
+                            android:background="@drawable/text_input_background_normal"
+                            android:gravity="center_vertical"
+                            android:imeActionLabel="@string/aio_ime_action_label"
+                            android:inputType="textMultiLine"
+                            android:lineSpacingExtra="3dp"
+                            android:maxLines="3"
+                            android:minHeight="34.0dip"
+                            android:paddingLeft="5.0dip"
+                            android:paddingRight="5.0dip"
+                            android:textColor="@color/list_name"
+                            android:textSize="16.0sp" />
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:id="@+id/chat_record_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:addStatesFromChildren="true"
+                        android:visibility="gone" >
+
+                        <Button
+                            android:id="@+id/chat_record_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/selector_record_long_click"
+                            android:minHeight="34.0dip"
+                            android:text="@string/aio_press_speak_label"
+                            android:textColor="#9c9c9c"
+                            android:textSize="14.0sp" />
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/chat_send_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dip"
+                    android:addStatesFromChildren="true" >
+
+                    <ImageButton
+                        android:id="@+id/chat_send_btn"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/send_icon"
+                        android:contentDescription="@null"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/chat_extend_btn"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/im_plus_function_drawable"
+                        android:contentDescription="@null" >
+                    </ImageButton>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/global_border" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_sort_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:alpha="0.75"
+            android:background="@color/white"
+            android:baselineAligned="true"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/chat_sort_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_func_bg"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/down_image_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/chat_sort_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_func_bg"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/down_file_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/chat_sort_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_func_bg"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/down_search_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/pop_audio_ing" />
+
+        <com.yonyou.sns.im.ui.widget.recoredview.WaveRecoredFrame
+            android:id="@+id/wave_recored_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <com.yonyou.sns.im.ui.emoji.view.EmojiKeyboard
+        android:id="@+id/chat_emoji_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <GridView
+        android:id="@+id/chat_extend_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:paddingBottom="30.0dip"
+        android:paddingLeft="19.0dip"
+        android:paddingRight="19.0dip"
+        android:paddingTop="30.0dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="30.0dip"
+        android:visibility="gone" >
+    </GridView>
+
+</LinearLayout>

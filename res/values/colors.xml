@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="black_0f">#ff0f0f0f</color>
+    <color name="gray_35">#ff353535</color>
+    <color name="gray_57">#ff575757</color>
+    <color name="gray_7">#ff777777</color>
+    <color name="gray_87">#ff878787</color>
+    <color name="gray_8f">#ff8f8f8f</color>
+    <color name="gray_a">#ffaaaaaa</color>
+    <color name="gray_c">#ffcccccc</color>
+    <color name="gray_d">#ffdddddd</color>
+    <color name="gray_e">#ffd8d8d8</color>
+    <color name="gray_f">#ffededed</color>
+    <color name="blue_normal">#12a5f4</color>
+    <color name="blue_dark">#1589c8</color>
+    <color name="green_normal">#69b553</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_dark">#cb000000</color>
+    <color name="transparent_dark_66">#66000000</color>
+
+    <!-- global -->
+    <color name="global_backgroud">#ffededed</color>
+    <color name="global_border">#ffcccbcc</color>
+
+    <!-- ListView -->
+    <color name="list_name">#ff0b0b0c</color>
+    <color name="list_content">#ffafafaf</color>
+    <color name="list_time">#ffc6c6c6</color>
+    <color name="list_divider">#ffe8e6e6</color>
+
+    <!-- emoji -->
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="default_circle_indicator_fill_color">#ff298ecb</color>
+    <color name="default_circle_indicator_page_color">#ff777777</color>
+    <color name="emoji_background_tab_pressed">#6633B5E5</color>
+    <color name="emoji_indicator_color">#ff20b2aa</color>
+    <color name="emoji_indicator_blue_color">#ff18C0ed</color>
+    <color name="emoji_divider_color">#88909597</color>
+    <color name="emoji_background_tab">#fbfbfb</color>
+    <color name="emoji_advanced_gray">#d8d8d8</color>
+
+    <!-- alert dialog -->
+    <color name="dialog_edit_bg">#E3E4E8</color>
+    <color name="dialog_text">#504A51</color>
+    <color name="dialog_confirm">#3F9CF2</color>
+    <color name="dialog_guide_img_bg">#eaf9fe</color>
+    <color name="dialog_guide_content_txt">#C1C8C9</color>
+    <color name="dialog_guide_button">#30cdf1</color>
+
+    <!-- top bar -->
+    <color name="top_bar_background">#de322a33</color>
+    <color name="top_bar_title">@color/white</color>
+    <color name="top_bar_icon_background">#ff322a33</color>
+
+    <!-- func -->
+    <color name="func_name">#ff545d64</color>
+    <color name="func_background">@color/white</color>
+    <color name="func_background_hl">@color/gray_c</color>
+    <color name="func_separator">@color/gray_e</color>
+
+    <!-- vcard -->
+    <color name="vcard_bg">@color/gray_f</color>
+    <color name="vcard_top_separator">#ffeff4fa</color>
+    <color name="vcard_name">@color/gray_57</color>
+    <color name="vcard_func_text">@color/black</color>
+    <color name="vcard_border">@color/gray_e</color>
+
+    <!-- systemInfo -->
+    <color name="systeminfo_accept_background">#ff69B553</color>
+
+    <!-- switch -->
+    <color name="switch_checked">@color/blue_normal</color>
+    <color name="switch_unchecked">@color/gray_a</color>
+    <color name="switch_inner">@color/white</color>
+    <!-- dialog menu -->
+    <color name="dialog_menu_text">@color/gray_57</color>
+
+    <!-- splash -->
+    <color name="splash_background">#07bdec</color>
+
+    <!-- login -->
+    <color name="login_input">#0c6594</color>
+    <color name="login_input_error">#ff0000</color>
+    <color name="login_input_hint">#07bdec</color>
+    <color name="login_input_bg">#66ffffff</color>
+    <color name="login_button">@color/white</color>
+    <color name="login_button_ll">#72b8f1</color>
+    <color name="login_button_bg">#1de447</color>
+    <color name="login_button_bg_hl">#7ff899</color>
+    <color name="login_button_bg_ll">#c2fcff</color>
+    <color name="login_bottom">#e5ffffff</color>
+
+    <!-- main -->
+    <color name="main_tabitem_text">@color/gray_87</color>
+    <color name="main_tabitem_text_hl">#4a434b</color>
+    <color name="main_tabwidget_background">@color/gray_f</color>
+    <color name="main_tabwidget_separator">@color/gray_d</color>
+
+    <!-- topbar 发起群聊 -->
+    <color name="topbar_create_multi_chat_text">@color/white</color>
+    <color name="topbar_create_multi_chat_background">#ff5c545d</color>
+    <color name="topbar_create_multi_chat_press_background">#ff4a434b</color>
+    <color name="topbar_create_multi_chat_divide">#ff7d767d</color>
+
+    <!-- createMultiChat -->
+    <color name="create_multi_chat_background">@color/gray_f</color>
+    <color name="create_multi_chat_module_text">@color/gray_7</color>
+    <color name="create_multi_chat_module_divide_line">#ffcecdcd</color>
+
+    <!-- roomInfo -->
+    <color name="room_info_background">@color/gray_f</color>
+    <color name="room_info_grid_item_text">#ff898e91</color>
+    <color name="room_info_grid_item_right_text">#ff768082</color>
+    <color name="room_info_exit_button_background">#ffed4d22</color>
+    <color name="room_info_list_divide">#ffF0EFEF</color>
+
+    <!-- search -->
+    <color name="search_edit_bg">#8889858A</color>
+    <color name="search_bg">@color/gray_f</color>
+    <color name="search_module_text">@color/gray_7</color>
+    <color name="search_empty_text">#C1C8C9</color>
+    <color name="search_result_key">#ff12a5f4</color>
+    <!-- me -->
+    <color name="me_bg">@color/gray_f</color>
+    <color name="me_border">@color/gray_e</color>
+    <color name="me_separator">@color/gray_e</color>
+    <color name="me_account_name">#ff545d64</color>
+
+    <!-- setting -->
+    <color name="setting_item">#ff545d64</color>
+    <color name="setting_exit_text">@color/gray_57</color>
+    <color name="setting_exit_note_text">@color/gray_a</color>
+
+    <!-- about -->
+    <color name="about_background">@color/gray_f</color>
+    <color name="about_appname">@color/gray_a</color>
+    <color name="about_separator">@color/gray_d</color>
+    <color name="about_version">@color/gray_a</color>
+    <color name="about_copyright">@color/gray_a</color>
+
+    <!-- account info -->
+    <color name="account_info_func_text">@color/gray_7</color>
+
+    <!-- GroupListView -->
+    <color name="group_list_name">#ff898e91</color>
+
+    <!-- album photo -->
+    <!-- camera edit -->
+    <color name="camera_edit_confirm_normal">#ff69B553</color>
+    <color name="camera_edit_confirm_pressed">#ff52B234</color>
+    <color name="camera_edit_checkbox_text">#ff8F8E8E</color>
+    <!-- chat -->
+    <color name="chat_item_date">@color/white</color>
+    <color name="chat_item_username">#6e7578</color>
+    <color name="chat_item_extrainfo">@color/gray_a</color>
+    <color name="record_contaner_bg">#88000000</color>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/systeminfo_item_icon"
+        android:layout_width="@dimen/list_height"
+        android:layout_height="@dimen/list_height"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:duplicateParentState="true"
+        android:padding="@dimen/list_avatar_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_default_user" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/list_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/list_padding" >
+
+        <TextView
+            android:id="@+id/systeminfo_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_name_height"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/list_name"
+            android:textSize="@dimen/list_name" />
+
+        <com.yonyou.sns.im.ui.emoji.view.EmojiTextView
+            android:id="@+id/systeminfo_item_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_msg_height"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/list_content"
+            android:textSize="@dimen/list_content"
+            app:isDynamic="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/systeminfo_item_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/list_horizontal_margin"
+        android:duplicateParentState="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/list_time"
+        android:textSize="@dimen/list_time" />
+
+    <Button
+        android:id="@+id/systeminfo_item_accept"
+        android:layout_width="@dimen/systeminfo_item_confirm_width"
+        android:layout_height="@dimen/systeminfo_item_confirm_height"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/list_horizontal_margin"
+        android:background="@drawable/shape_system_accept_button"
+        android:gravity="center"
+        android:text="@string/systeminfo_accept"
+        android:textColor="@color/white"
+        android:textSize="@dimen/systeminfo_item_confirm_text"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/systeminfo_item_refuse"
+        android:layout_width="@dimen/systeminfo_item_confirm_width"
+        android:layout_height="@dimen/systeminfo_item_confirm_height"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/list_horizontal_margin"
+        android:background="@drawable/shape_system_refuse_button"
+        android:gravity="center"
+        android:text="@string/systeminfo_refuse"
+        android:textColor="@color/white"
+        android:textSize="@dimen/systeminfo_item_confirm_text"
+        android:visibility="gone" />
+
+</LinearLayout>

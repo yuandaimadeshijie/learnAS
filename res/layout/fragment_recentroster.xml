@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/create_chatroom_frametop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <!-- search -->
+
+        <RelativeLayout
+            android:id="@+id/create_chatroom_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/create_multi_chat_search_shape"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/create_multi_chat_search"
+                android:drawablePadding="3dp"
+                android:duplicateParentState="true"
+                android:text="@string/search"
+                android:textColor="@color/create_multi_chat_module_text" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/list_divider" />
+
+        <!-- 选择分组 -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/create_multi_chat_module_height"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/create_multi_chat_left"
+            android:text="@string/select_group"
+            android:textColor="@color/create_multi_chat_module_text"
+            android:textSize="@dimen/create_multi_chat_module_text" />
+
+        <GridView
+            android:id="@+id/create_chatroom_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/create_multi_chat_select_group_space"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:paddingBottom="@dimen/create_chatroom_group_vertical_padding"
+            android:paddingTop="@dimen/create_chatroom_group_vertical_padding"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recent_roster_label"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/create_multi_chat_module_height"
+        android:background="@color/global_backgroud"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/create_multi_chat_left"
+        android:text="@string/recent_contact_friend"
+        android:textColor="@color/group_list_name"
+        android:textSize="@dimen/create_multi_chat_module_text" />
+
+    <ListView
+        android:id="@+id/recent_roster_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:divider="@color/list_divider"
+        android:dividerHeight="@dimen/list_divider"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/room_info_grid_item_icon"
+        android:layout_width="@dimen/create_multi_chat_user_image_size"
+        android:layout_height="@dimen/create_multi_chat_user_image_size"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_default_user"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/room_info_grid_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/room_info_grid_item_text_margin_top"
+        android:gravity="center"
+        android:textColor="@color/room_info_grid_item_text"
+        android:textSize="@dimen/room_info_grid_item_text_size" />
+
+</LinearLayout>

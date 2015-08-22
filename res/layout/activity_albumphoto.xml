@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_simple_topbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <GridView
+            android:id="@+id/album_photo_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/top_bar_background"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/album_photo_spacing"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:paddingLeft="@dimen/album_photo_spacing"
+            android:paddingRight="@dimen/album_photo_spacing"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/album_photo_spacing" />
+
+        <View
+            android:id="@+id/album_list_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_album_image_bg"
+            android:visibility="gone" >
+        </View>
+
+        <ListView
+            android:id="@+id/album_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/album_listview_margin_bottom"
+            android:background="@color/white"
+            android:divider="@drawable/shape_album_divider"
+            android:dividerHeight="1px"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_d" />
+
+    <LinearLayout
+        android:id="@+id/album_photo_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_photo_bottom_height"
+        android:background="@color/gray_f"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.yonyou.sns.im.ui.widget.HorizontalListView
+            android:id="@+id/album_thumb_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/album_photo_thumb_padding"
+            app:dividerWidth="3dp" >
+        </com.yonyou.sns.im.ui.widget.HorizontalListView>
+    </LinearLayout>
+
+</LinearLayout>
